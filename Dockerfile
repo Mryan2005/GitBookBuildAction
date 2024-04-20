@@ -4,7 +4,7 @@ WORKDIR /workspace/${INPUT_GITBOOK_INPUT}
 VOLUME [ "/${INPUT_GITBOOK_INPUT}" ]
 RUN apt-get update
 RUN apt-get install -y curl
-RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN sudo apt update
 RUN sudo apt install nodejs
 RUN apt-get install -y npm
