@@ -1,0 +1,19 @@
+name: GitBook Build Action
+description: GitBook Build Action
+author: 'Mryan2005'
+inputs:
+  gitbook_version:
+    description: 'GitBook version'
+    required: true
+    default: '3.2.3'
+  gitbook_input:
+    description: 'GitBook input directory'
+    required: true
+    default: '.'
+  gitbook_output:
+    description: 'GitBook output directory'
+    required: true
+    default: '_book'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
