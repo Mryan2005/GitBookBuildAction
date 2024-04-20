@@ -5,6 +5,6 @@ WORKDIR /workspace
 RUN npm install -g gitbook-cli
 RUN gitbook fetch 3.2.3
 RUN gitbook -V
-RUN ls .
+RUN ls ${INPUT_GITBOOK_INPUT}
 
-ENTRYPOINT ["gitbook", "build"]
+ENTRYPOINT ls ${INPUT_GITBOOK_INPUT} && gitbook build
