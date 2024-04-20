@@ -5,6 +5,6 @@ WORKDIR /
 RUN npm install -g gitbook-cli
 RUN gitbook fetch 3.2.3
 RUN gitbook -V
-RUN ls -la
+RUN ls ./
 
 ENTRYPOINT ["gitbook", "build"]
