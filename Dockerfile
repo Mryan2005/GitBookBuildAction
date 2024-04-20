@@ -1,4 +1,4 @@
-FROM Ubuntu:latest
+FROM ubuntu:latest
 COPY ${INPUT_GITBOOK_INPUT} /workspace
 WORKDIR /workspace/${INPUT_GITBOOK_INPUT}
 VOLUME [ "/${INPUT_GITBOOK_INPUT}" ]
