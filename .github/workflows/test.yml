@@ -20,3 +20,5 @@ jobs:
           gitbook_version: '3.2.3'
           gitbook_input: './testboook'
           gitbook_output: '_book'
+      - name: check gitbook_output
+        run: ls ./output

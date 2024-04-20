@@ -6,4 +6,4 @@ RUN npm install -g gitbook-cli
 RUN gitbook fetch 3.2.3
 RUN gitbook -V
 RUN gitbook build
-COPY /workspace/${INPUT_GITBOOK_INPUT} ./output
+COPY /workspace/${INPUT_GITBOOK_INPUT}/$(INPUT_GITBOOK_OUTPUT) ./output
