@@ -15,5 +15,5 @@ inputs:
     required: true
     default: '_book'
 runs:
-  using: 'shell'
-  main: './entrypoint.sh'
+  using: 'docker'
+  image: 'Dockerfile'
